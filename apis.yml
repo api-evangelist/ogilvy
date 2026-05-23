@@ -1,0 +1,158 @@
+aid: ogilvy
+name: Ogilvy
+description: >-
+  Ogilvy is a global advertising, marketing, and communications agency network
+  founded by David Ogilvy in 1948 and headquartered in New York City. It is a
+  WPP company (NASDAQ: WPPGY) operating across roughly 132 offices in 83
+  countries (per ogilvy.com/about; WPP cites 128 offices in 88 countries) with
+  approximately 17,500 employees (per Wikipedia, as of 2022). The network
+  positions itself around "Borderless Creativity," innovating at the
+  intersections of five core capabilities: Advertising, Public Relations &
+  Influence, Consulting, Relationship Design (OgilvyOne), and Health. Ogilvy
+  was named Cannes Lions Network of the Year in 2022 and 2024, D&AD Network
+  of the Year in 2020, and took Network of the Year at The One Show 2026.
+  Long-standing client work includes Coca-Cola, Dove (Campaign for Real
+  Beauty), IBM, American Express, IKEA, Hellmann's, Unilever, KFC, and
+  Cadbury. Ogilvy does not publish a developer portal, public REST APIs,
+  OpenAPI specifications, SDKs, status page, changelog, or pricing — its
+  product is creative work delivered to brand clients, not software offered
+  to developers. There is no `github.com/Ogilvy` organization. This
+  repository indexes the public properties (homepage, capabilities, work,
+  ideas/blog, parent company, regional sites, and notable sub-brands) so the
+  API Evangelist network can track the absence of a developer surface and
+  link Ogilvy to its parent WPP and to its practice-area brands (Ogilvy
+  Health, OgilvyOne, Ogilvy PR, Ogilvy Consulting).
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Advertising
+  - Marketing
+  - Creative
+  - Agency
+  - Agency Network
+  - Holding Company Subsidiary
+  - Public Relations
+  - Brand Strategy
+  - Consulting
+  - Health Communications
+  - Customer Experience
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/ogilvy/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://www.ogilvy.com
+  - type: About
+    url: https://www.ogilvy.com/about
+  - type: Work
+    url: https://www.ogilvy.com/work
+  - type: Capabilities
+    url: https://www.ogilvy.com/capabilities
+  - type: Ideas
+    url: https://www.ogilvy.com/ideas
+    name: Ogilvy Ideas (blog / newsroom)
+  - type: Contact
+    url: https://www.ogilvy.com/contact
+  - type: Parent
+    url: https://www.wpp.com
+    name: WPP plc (NASDAQ: WPPGY)
+  - type: ParentProfile
+    url: https://www.wpp.com/en/companies/ogilvy
+    name: WPP — Ogilvy company page
+  - type: SubBrand
+    url: https://www.ogilvy.com/capabilities/pr-influence
+    name: Ogilvy PR & Influence
+  - type: SubBrand
+    url: https://www.ogilvy.com/capabilities/health
+    name: Ogilvy Health
+  - type: SubBrand
+    url: https://www.ogilvy.com/capabilities/consulting
+    name: Ogilvy Consulting
+  - type: SubBrand
+    url: https://www.ogilvy.com/capabilities/relationship-design
+    name: OgilvyOne (Relationship Design)
+  - type: SubBrand
+    url: https://www.ogilvy.com/capabilities/advertising
+    name: Ogilvy Advertising
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/ogilvy
+  - type: Wikipedia
+    url: https://en.wikipedia.org/wiki/Ogilvy_(agency)
+  - type: Tagline
+    title: Borderless Creativity
+  - type: Positioning
+    title: Ogilvy inspires brands and people to impact the world.
+  - type: HeadquartersCity
+    title: New York, NY, USA
+  - type: Founded
+    title: '1948'
+  - type: Founder
+    title: David Ogilvy
+  - type: Scale
+    title: ~132 offices / 83 countries (per ogilvy.com/about); 128 offices / 88 countries (per wpp.com)
+  - type: Employees
+    title: ~17,500 (per Wikipedia, as of 2022)
+  - type: CEO
+    title: Laurent Ezekiel — Global Chief Executive Officer
+  - type: Leadership
+    title: Liz Taylor — Global Chief Creative Officer
+  - type: Leadership
+    title: Mick McCabe — Global Chief Strategy Officer
+  - type: Leadership
+    title: Julianna Richter — Global CEO, Public Relations & Influence
+  - type: Leadership
+    title: Mario Muredda — Global CEO, Ogilvy Health
+  - type: Leadership
+    title: Clare Lawson — Global President & EMEA CEO, OgilvyOne
+  - type: Award
+    title: Cannes Lions Network of the Year (2022, 2024)
+  - type: Award
+    title: D&AD Network of the Year (2020)
+  - type: Award
+    title: The One Show — Network of the Year (2026)
+  - type: NotableClient
+    title: Coca-Cola
+  - type: NotableClient
+    title: Unilever (Dove, Vaseline, Hellmann's)
+  - type: NotableClient
+    title: IKEA
+  - type: NotableClient
+    title: Heinz
+  - type: NotableClient
+    title: Cadbury
+  - type: NotableClient
+    title: KFC
+  - type: NotableClient
+    title: Burger King
+  - type: NotableClient
+    title: American Express
+  - type: NotableClient
+    title: IBM
+  - type: NotableClient
+    title: San Pellegrino
+  - type: NotableCampaign
+    title: Dove — "Campaign for Real Beauty" (2004)
+  - type: NotableCampaign
+    title: IBM — "Solutions for a Small Planet" (1994)
+  - type: NotableCampaign
+    title: American Express — "Do You Know Me?" (1974)
+  - type: NotableCampaign
+    title: Hathaway — "The Man in the Hathaway Shirt" (1951)
+  - type: NotableCampaign
+    title: India Tourism — "Incredible !ndia" (2002)
+  - type: NotableCampaign
+    title: Vaseline — "Vaseline Verified" (D&AD 2026, Ogilvy Singapore)
+  - type: NotableCampaign
+    title: Coca-Cola — "The Devil Wears Prada 2" (Diet Coke integration)
+  - type: NoDeveloperPortal
+    title: No developer portal, REST APIs, OpenAPI, SDKs, CLI, webhooks, status page, or public pricing
+  - type: NoGitHubOrg
+    title: No github.com/Ogilvy organization (404)
+  - type: NoRSS
+    title: No RSS/Atom feed advertised on /ideas
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
