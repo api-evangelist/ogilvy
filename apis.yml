@@ -58,7 +58,7 @@ common:
     url: https://www.ogilvy.com/contact
   - type: Parent
     url: https://www.wpp.com
-    name: WPP plc (NASDAQ: WPPGY)
+    name: "WPP plc (NASDAQ: WPPGY)"
   - type: ParentProfile
     url: https://www.wpp.com/en/companies/ogilvy
     name: WPP — Ogilvy company page
