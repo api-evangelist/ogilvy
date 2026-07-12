@@ -43,6 +43,10 @@ modified: '2026-05-23'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/ogilvy-domain-security.yml
+  - url: https://www.ogilvy.com/ideas
+    type: Blog
   - type: Website
     url: https://www.ogilvy.com
   - type: About
