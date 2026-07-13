@@ -1,0 +1,14 @@
+{
+  "repo": "ogilvy",
+  "feeds": [
+    {
+      "source": "https://www.ogilvy.com/ideas",
+      "feed_url": "https://www.ogilvy.com/ideas",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 25
+}
