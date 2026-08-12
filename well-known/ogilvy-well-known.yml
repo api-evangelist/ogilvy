@@ -1,0 +1,244 @@
+generated: '2026-08-12'
+method: probed
+source: live HTTPS probes of https://www.ogilvy.com/.well-known/*, https://api.ogilvy.com/.well-known/* and https://www.ogilvyhealth.com/.well-known/*
+hosts:
+  - https://www.ogilvy.com
+  - https://api.ogilvy.com
+  - https://www.ogilvyhealth.com
+note: >-
+  Every /.well-known/ path probed on every Ogilvy host returned HTTP 404. On
+  www.ogilvy.com the body is the Drupal theme's 404 page (~84 KB of HTML) served
+  with a real 404 status — not a soft-200 — and on api.ogilvy.com it is a bare
+  nginx 404. No well-known document is served anywhere. Recorded as an absence:
+  NO WellKnown and NO SecurityTxt pointer is emitted in apis.yml, because either
+  pointer would assert that Ogilvy publishes a discovery surface it does not.
+  Ogilvy DOES publish a Responsible Disclosure Policy as an HTML page — see
+  security/ogilvy-vulnerability-disclosure.yml — but it is not advertised via
+  RFC 9116 security.txt.
+documents:
+  - host: www.ogilvy.com
+    path: /.well-known/security.txt
+    status: 404
+    file: null
+  - host: www.ogilvy.com
+    path: /security.txt
+    status: 404
+    file: null
+  - host: www.ogilvy.com
+    path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - host: www.ogilvy.com
+    path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - host: www.ogilvy.com
+    path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - host: www.ogilvy.com
+    path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - host: www.ogilvy.com
+    path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - host: www.ogilvy.com
+    path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - host: www.ogilvy.com
+    path: /.well-known/agent.json
+    status: 404
+    file: null
+  - host: api.ogilvy.com
+    path: /.well-known/security.txt
+    status: 404
+    file: null
+  - host: api.ogilvy.com
+    path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - host: api.ogilvy.com
+    path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - host: api.ogilvy.com
+    path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - host: api.ogilvy.com
+    path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - host: api.ogilvy.com
+    path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - host: api.ogilvy.com
+    path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - host: api.ogilvy.com
+    path: /.well-known/agent.json
+    status: 404
+    file: null
+  - host: www.ogilvyhealth.com
+    path: /.well-known/security.txt
+    status: 404
+    file: null
+  - host: www.ogilvyhealth.com
+    path: /.well-known/agent-card.json
+    status: 404
+    file: null
+contract_discovery:
+  note: >-
+    STEP 0b contract discovery. www.ogilvy.com is a Drupal 10 site; api.ogilvy.com
+    resolves through Azure Traffic Manager to an nginx origin that answers 404 on
+    every path including "/" — it is an internal/legacy host, not a published API.
+    No OpenAPI, Swagger, GraphQL SDL, AsyncAPI, MCP endpoint or agent card exists
+    on any Ogilvy host.
+  probes:
+    - host: www.ogilvy.com
+      path: /openapi.json
+      status: 404
+    - host: www.ogilvy.com
+      path: /swagger.json
+      status: 404
+    - host: www.ogilvy.com
+      path: /api-docs
+      status: 404
+    - host: www.ogilvy.com
+      path: /api
+      status: 404
+    - host: www.ogilvy.com
+      path: /rest
+      status: 404
+    - host: www.ogilvy.com
+      path: /graphql
+      status: 404
+    - host: www.ogilvy.com
+      path: /graphql/v1
+      status: 404
+    - host: www.ogilvy.com
+      path: /graphql/graphiql
+      status: 404
+    - host: www.ogilvy.com
+      path: /llms.txt
+      status: 404
+    - host: api.ogilvy.com
+      path: /
+      status: 404
+      note: bare nginx 404 body; the host answers nothing
+    - host: api.ogilvy.com
+      path: /openapi.json
+      status: 404
+    - host: api.ogilvy.com
+      path: /openapi.yaml
+      status: 404
+    - host: api.ogilvy.com
+      path: /swagger.json
+      status: 404
+    - host: api.ogilvy.com
+      path: /swagger/v1/swagger.json
+      status: 404
+    - host: api.ogilvy.com
+      path: /v1/openapi.json
+      status: 404
+    - host: api.ogilvy.com
+      path: /docs
+      status: 404
+    - host: api.ogilvy.com
+      path: /redoc
+      status: 404
+    - host: api.ogilvy.com
+      path: /api-docs
+      status: 404
+    - host: api.ogilvy.com
+      path: /graphql
+      status: 404
+    - host: api.ogilvy.com
+      path: /llms.txt
+      status: 404
+    - host: api.ogilvy.com
+      path: /robots.txt
+      status: 404
+    - host: www.ogilvyhealth.com
+      path: /openapi.json
+      status: 404
+    - host: www.ogilvyhealth.com
+      path: /llms.txt
+      status: 404
+  dns:
+    - name: api.ogilvy.com
+      resolves: true
+      note: >-
+        CNAME api.ogilvy.com.trafficmanager.net ->
+        core-prod-ext3.eastus.cloudapp.azure.com (20.85.164.29). nginx origin,
+        404 on every probed path including the root.
+    - name: developer.ogilvy.com
+      resolves: false
+    - name: developers.ogilvy.com
+      resolves: false
+    - name: docs.ogilvy.com
+      resolves: false
+    - name: apis.ogilvy.com
+      resolves: false
+    - name: status.ogilvy.com
+      resolves: false
+drupal_surface:
+  note: >-
+    www.ogilvy.com runs Drupal (confirmed by /core/misc/drupal.js, HTTP 200). The
+    Drupal REST/JSON:API modules expose NO public resources: /jsonapi and
+    /jsonapi/node/article 404, and the REST router answers /node?_format=json with
+    a JSON routing error rather than content. The only 200-returning machine-readable
+    endpoints are site-internal plumbing, not an API product.
+  probes:
+    - path: /jsonapi/
+      status: 404
+    - path: /jsonapi/node/article
+      status: 404
+    - path: /router/translate-path
+      status: 404
+    - path: /entity/node
+      status: 404
+    - path: /oauth/token
+      status: 404
+    - path: /node?_format=json
+      status: 404
+      content_type: application/json
+      body: '{"message":"No route found for \"GET https://www.ogilvy.com/node\""}'
+      note: >-
+        Drupal REST routing is loaded but no entity resource is published. The
+        JSON error body is the only evidence the REST layer exists at all.
+    - path: /session/token
+      status: 200
+      content_type: text/plain
+      note: >-
+        Drupal's CSRF token endpoint. Site-internal plumbing required by the
+        theme's own JavaScript — not an API resource, not documented, not usable
+        by a third party.
+    - path: /check-geo-country
+      status: 200
+      content_type: application/json
+      body: '{"geo_country":"us"}'
+      note: >-
+        Single-purpose geo-routing helper the site calls from its own front-end
+        (visible in the served HTML). Machine-readable but not a published API:
+        no documentation, no versioning, no contract, one field.
+    - path: /core/misc/drupal.js
+      status: 200
+      note: Drupal core asset — the platform fingerprint.
+    - path: /robots.txt
+      status: 200
+      note: Stock Drupal robots.txt; nothing developer-related disallowed.
+    - path: /sitemap.xml
+      status: 200
+      note: 1,535 URLs, all marketing/editorial. No developer, API or docs path.
+    - path: /feed
+      status: 200
+      content_type: text/html
+      note: >-
+        SOFT 200 — returns the human /ideas HTML page, not an RSS/Atom document.
+        /rss.xml, /ideas/rss.xml and /ideas/feed all 404. Ogilvy publishes no feed.

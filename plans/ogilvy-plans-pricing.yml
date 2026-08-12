@@ -1,0 +1,34 @@
+generated: '2026-08-12'
+method: searched
+source: >-
+  https://www.ogilvy.com/sitemap.xml (1,535 URLs, walked in full) plus direct
+  probes of the conventional pricing paths.
+plan_count: 0
+pricing_model: not-published
+currency: null
+plans: []
+note: >-
+  Ogilvy publishes no plans, tiers, rate card or price list of any kind. It is a
+  creative agency network: engagements are scoped and negotiated per client
+  through a business-development conversation, and the only commercial call to
+  action on the site is /contact. There is no product to price, because there is
+  no product — the deliverable is creative and communications work, not software
+  or API access. This is an honest zero, not a gap in our pass: an agency with no
+  published pricing is behaving exactly as its category does. Recorded so the
+  `accessModel.pricing: unknown` on this profile has evidence behind it rather
+  than being an untested assumption.
+evidence:
+  - url: https://www.ogilvy.com/sitemap.xml
+    status: 200
+    note: >-
+      Every one of the 1,535 URLs is marketing or editorial (/work/*, /ideas/*,
+      regional variants). No /pricing, /plans, /rates, /packages or equivalent
+      path appears anywhere in the sitemap.
+  - url: https://www.ogilvy.com/contact
+    status: 200
+    note: The site's only commercial entry point — a contact form, not a checkout.
+  - url: https://www.ogilvy.com/terms
+    status: 404
+    note: No terms of service page is published, so no commercial terms to read either.
+x-evidence:
+  fetched: '2026-08-12'

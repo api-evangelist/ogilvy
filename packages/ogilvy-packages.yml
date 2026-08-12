@@ -1,0 +1,94 @@
+generated: '2026-08-12'
+method: searched
+source: >-
+  Registry searches against registry.npmjs.org, pypi.org, rubygems.org,
+  crates.io, api.nuget.org, search.maven.org and pkg.go.dev for Ogilvy-published
+  packages, plus a GitHub account check.
+note: >-
+  Ogilvy publishes NO client SDK, because Ogilvy publishes no API. One npm
+  package carrying the Ogilvy name exists and was published from an @ogilvy.com
+  address, but it is an unreleased internal design-system scaffold, not a
+  supported product and not an API client. It is recorded here as an honest
+  registry observation and is explicitly NOT marked official — and NO `SDKs`
+  pointer is emitted in apis.yml, because Ogilvy ships no SDK.
+package_count: 1
+official_package_count: 0
+sdk_count: 0
+packages:
+  - name: ogilvy-design-system
+    registry: npm
+    url: https://www.npmjs.com/package/ogilvy-design-system
+    official: false
+    confidence: low
+    kind: ui-component-library
+    language: TypeScript
+    version: 0.1.1
+    published: '2026-06-23'
+    first_published: '2026-06-23'
+    release_count: 2
+    license: null
+    repository: null
+    homepage: null
+    description: >-
+      "Reusable React component library scaffold built with Vite library mode,
+      TypeScript, SCSS, Style Dictionary, and Storybook."
+    note: >-
+      Published by npm user pierre.akh from an @ogilvy.com email address, and two
+      of the four maintainer accounts carry Ogilvy-suggestive names — so the
+      publisher is very likely an Ogilvy employee. It is still NOT treated as an
+      official Ogilvy package: the README is the untouched generator boilerplate
+      (it is titled "@company/design-system" and its install instructions are
+      `npm install` in the package's own checkout), there is no repository, no
+      homepage, no license and no author field, and both versions were published
+      within 80 minutes of each other on a single day with nothing since. This
+      has the shape of an accidental or exploratory publish of a starter
+      template, not a maintained first-party artifact. It wraps no API.
+  - name: om
+    registry: npm
+    url: https://www.npmjs.com/package/om
+    official: false
+    confidence: none
+    version: null
+    published: null
+    note: >-
+      Surfaced by an npm text search for "ogilvy" only because its repository
+      link points at github.com/ogilvyatlanta. Published 2013-03-25 by an
+      unrelated account (eatarandom), not an Ogilvy package, and listed here
+      solely so a future run does not re-investigate it. No version recorded
+      because it is not attributed to Ogilvy.
+registries_checked:
+  - registry: npm
+    result: 1 name-matching package, none official
+  - registry: PyPI
+    result: no package named ogilvy (HTTP 404)
+  - registry: RubyGems
+    result: none
+  - registry: crates.io
+    result: none
+  - registry: NuGet
+    result: none
+  - registry: Maven Central
+    result: none
+  - registry: pkg.go.dev
+    result: none
+  - registry: Packagist
+    result: none
+source_control:
+  - url: https://github.com/Ogilvy
+    http_status: 200
+    note: >-
+      A GitHub USER account, not an organization, with zero public repositories
+      ("Ogilvy doesn't have any public repositories yet") and no bio, company,
+      location or website. Nothing attributes it to WPP's Ogilvy. This corrects
+      the earlier profile note that recorded a 404 here.
+  - url: https://github.com/ogilvyatlanta
+    http_status: 200
+    note: >-
+      Dormant account tied to a 2013 npm package. Not a network-level Ogilvy
+      engineering org.
+  - url: https://github.com/OgilvyOne
+    http_status: 200
+    note: Account exists; no first-party SDK or spec attributable to Ogilvy found.
+x-evidence:
+  fetched: '2026-08-12'
+  npm_metadata: https://registry.npmjs.org/ogilvy-design-system

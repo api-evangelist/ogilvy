@@ -1,0 +1,34 @@
+generated: '2026-08-12'
+method: searched
+source: >-
+  Contract discovery across www.ogilvy.com, api.ogilvy.com and
+  www.ogilvyhealth.com (see well-known/ogilvy-well-known.yml) plus a sitemap walk
+  and web search for Ogilvy API documentation.
+limit_count: 0
+limits: []
+headers: []
+exhaustion_status: null
+note: >-
+  No rate limits are documented because Ogilvy publishes no API to limit. There
+  is no developer portal, no reference, no OpenAPI and no authenticated surface
+  on any Ogilvy host; the only 200-returning JSON endpoint found anywhere is
+  /check-geo-country, a single-field geo-routing helper the marketing site calls
+  from its own front-end, which carries no rate-limit headers and no contract.
+  The site-wide robots.txt sets no Crawl-delay. This is an honest zero recorded
+  so the absence is a measurement rather than an omission.
+evidence:
+  - url: https://www.ogilvy.com/robots.txt
+    status: 200
+    note: Stock Drupal robots.txt. No Crawl-delay directive, no API paths referenced.
+  - url: https://www.ogilvy.com/check-geo-country
+    status: 200
+    note: >-
+      Observed live and unauthenticated. Response carried no X-RateLimit-*,
+      RateLimit-* or Retry-After header.
+  - url: https://api.ogilvy.com/
+    status: 404
+    note: >-
+      The only API-named host Ogilvy resolves answers 404 on every path including
+      the root, so there is no live surface to observe limits on.
+x-evidence:
+  fetched: '2026-08-12'
