@@ -1,4 +1,4 @@
-# Ogilvy (ogilvy)
+# Ogilvy
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,147 +64,94 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Ogilvy is a global advertising, marketing, and communications agency network
-founded by David Ogilvy in 1948 and headquartered in New York City. It is a
-WPP company (NASDAQ: WPPGY) operating across roughly 132 offices in 83
-countries (per [ogilvy.com/about](https://www.ogilvy.com/about); [WPP](https://www.wpp.com/en/companies/ogilvy)
-cites 128 offices in 88 countries) with approximately 17,500 employees (per
-[Wikipedia](https://en.wikipedia.org/wiki/Ogilvy_(agency)), as of 2022). The
-network positions itself around "Borderless Creativity," innovating at the
-intersections of five core capabilities: Advertising, Public Relations &
-Influence, Consulting, Relationship Design (OgilvyOne), and Health.
+Ogilvy is a global advertising, marketing, and communications agency network founded by David Ogilvy in 1948 and headquartered in New York City. It is a WPP company (NASDAQ: WPPGY) operating across roughly 132 offices in 83 countries (per ogilvy.com/about; WPP cites 128 offices in 88 countries) with approximately 17,500 employees (per Wikipedia, as of 2022). The network positions itself around "Borderless Creativity," innovating at the intersections of five core capabilities: Advertising, Public Relations & Influence, Consulting, Relationship Design (OgilvyOne), and Health. Ogilvy was named Cannes Lions Network of the Year in 2022 and 2024, D&AD Network of the Year in 2020, and took Network of the Year at The One Show 2026. Long-standing client work includes Coca-Cola, Dove (Campaign for Real Beauty), IBM, American Express, IKEA, Hellmann's, Unilever, KFC, and Cadbury. Ogilvy does not publish a developer portal, public REST APIs, OpenAPI specifications, SDKs, status page, changelog, or pricing — its product is creative work delivered to brand clients, not software offered to developers. There is no `github.com/Ogilvy` organization. This repository indexes the public properties (homepage, capabilities, work, ideas/blog, parent company, regional sites, and notable sub-brands) so the API Evangelist network can track the absence of a developer surface and link Ogilvy to its parent WPP and to its practice-area brands (Ogilvy Health, OgilvyOne, Ogilvy PR, Ogilvy Consulting).
 
-Ogilvy does not publish a developer portal, public REST APIs, OpenAPI
-specifications, SDKs, status page, changelog, or pricing — its product is
-creative work delivered to brand clients, not software offered to developers.
-There is no `github.com/Ogilvy` organization. This repository indexes the
-public properties (homepage, capabilities, work, Ideas blog, parent company,
-and practice-area sub-brands) so the API Evangelist network can track the
-absence of a developer surface and link Ogilvy to its parent WPP and to its
-practice-area brands (Ogilvy Health, OgilvyOne, Ogilvy PR, Ogilvy
-Consulting).
+**Areas:** Advertising · Marketing · Creative · Agency · Agency Network · Holding Company Subsidiary · Public Relations · Brand Strategy · Consulting · Health Communications · Customer Experience
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/ogilvy/refs/heads/main/apis.yml)
+## Ogilvy on APIs.io
 
-## Scope
+Everything profiled for Ogilvy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ogilvy/](https://apis.io/providers/ogilvy/)** — or go straight to one of the APIs or properties below.
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** Private (no public developer surface)
+### Published properties
 
-## Tags
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Advertising
-- Marketing
-- Creative
-- Agency
-- Agency Network
-- Holding Company Subsidiary
-- Public Relations
-- Brand Strategy
-- Consulting
-- Health Communications
-- Customer Experience
+#### Security (2)
 
-## At a Glance
+Authentication, trust centre, and vulnerability disclosure.
 
-| Field | Value |
-|---|---|
-| Founded | 1948 |
-| Founder | David Ogilvy |
-| Headquarters | New York, NY, USA |
-| Parent | WPP plc (NASDAQ: WPPGY) |
-| Offices | ~132 (ogilvy.com) / 128 (wpp.com) |
-| Countries | 83 (ogilvy.com) / 88 (wpp.com) |
-| Employees | ~17,500 (per Wikipedia, 2022) |
-| Global CEO | Laurent Ezekiel |
-| Tagline | "Borderless Creativity" |
+- [Ogilvy Domain Security](https://apis.io/security/ogilvy/ogilvy-domain-security/)
+- [Ogilvy Vulnerability Disclosure](https://apis.io/security/ogilvy/ogilvy-vulnerability-disclosure/)
 
-Founding anchor per [WPP's Ogilvy company page](https://www.wpp.com/en/companies/ogilvy):
-*"We have been creating iconic, culture-changing, value-driving ideas for
-clients since David Ogilvy founded the company in 1948."*
+#### Plans and pricing (1)
 
-## Capabilities
+Published plans, tiers and prices.
 
-Ogilvy organizes its services around five practice areas:
+- [Ogilvy Plans Pricing](https://apis.io/plans/ogilvy/ogilvy-plans-pricing/)
 
-- **Advertising** — brand-building creative across film, print, OOH, digital
-- **PR & Influence** — earned media, communications, influencer programs
-- **Consulting** — brand strategy, transformation, growth consulting
-- **Relationship Design (OgilvyOne)** — CRM, loyalty, experience, direct
-- **Health** — pharma, wellness, and healthcare communications
+#### Rate limits (1)
 
-## APIs
+Published request limits.
 
-No public REST APIs, OpenAPI specifications, AsyncAPI specifications, SDKs,
-CLIs, webhooks, status page, changelog, or pricing pages are published by
-Ogilvy. The agency operates as a service business — creative strategy,
-campaign development, PR, consulting, and execution for brand clients — with
-no developer-facing product surface. Any technology integrations (ad-tech,
-measurement, identity, MarTech, data) are consumed via parent WPP units
-(GroupM, Choreograph, WPP Open) or third-party vendors rather than exposed
-by Ogilvy itself.
+- [Ogilvy Rate Limits](https://apis.io/rate-limits/ogilvy/ogilvy-rate-limits/)
 
-There is no `github.com/Ogilvy` organization (the URL returns 404). A
-handful of individual offices and creative-tech projects publish code under
-unrelated handles, but Ogilvy maintains no central GitHub presence, no SDK
-catalog, and no maintained developer tooling.
+## Where to find this API
 
-## Leadership
-
-- **Laurent Ezekiel** — Global Chief Executive Officer
-- **Liz Taylor** — Global Chief Creative Officer
-- **Mick McCabe** — Global Chief Strategy Officer
-- **Julianna Richter** — Global CEO, Public Relations & Influence
-- **Mario Muredda** — Global CEO, Ogilvy Health
-- **Clare Lawson** — Global President & EMEA CEO, OgilvyOne
-- **Chris Reitermann** — CEO, APAC and Greater China
-- **Patou Nuytemans** — CEO, EMEA
-- **Horacio Genolet** — CEO, Latin America
-
-## Notable Clients
-
-Coca-Cola, Unilever (Dove, Vaseline, Hellmann's), IKEA, Heinz, Cadbury,
-KFC, Burger King, American Express, IBM, San Pellegrino, Amstel.
-
-## Notable Campaigns
-
-- Dove — "Campaign for Real Beauty" (2004)
-- IBM — "Solutions for a Small Planet" (1994)
-- American Express — "Do You Know Me?" (1974)
-- Hathaway — "The Man in the Hathaway Shirt" (1951)
-- India Tourism — "Incredible !ndia" (2002)
-- Vaseline — "Vaseline Verified" (D&AD 2026, Ogilvy Singapore)
-- Coca-Cola — "The Devil Wears Prada 2" (Diet Coke integration)
-
-## Awards
-
-- Cannes Lions Network of the Year (2022, 2024)
-- D&AD Network of the Year (2020)
-- The One Show — Network of the Year (2026)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.ogilvy.com)
-- [About](https://www.ogilvy.com/about)
-- [Work](https://www.ogilvy.com/work)
-- [Capabilities](https://www.ogilvy.com/capabilities)
-- [Ideas (blog / newsroom)](https://www.ogilvy.com/ideas)
-- [Contact](https://www.ogilvy.com/contact)
-- [Parent — WPP plc](https://www.wpp.com)
-- [WPP — Ogilvy company page](https://www.wpp.com/en/companies/ogilvy)
-- [LinkedIn](https://www.linkedin.com/company/ogilvy)
-- [Wikipedia](https://en.wikipedia.org/wiki/Ogilvy_(agency))
+- [Blog](https://www.ogilvy.com/ideas)
+- [Privacy policy](https://www.ogilvy.com/privacy-policy)
 
-## Notable Absences
+## API Evangelist rating
 
-- No developer portal, REST APIs, OpenAPI, SDKs, CLI, webhooks
-- No status page, changelog, or public pricing
-- No `github.com/Ogilvy` GitHub organization (404)
-- No advertised RSS / Atom feed on the Ideas blog
+**Kin Score 9.7** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Maintainers
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 10.5 |
 
-**FN:** Kin Lane
+**Agent readiness 2.5** — human-only
 
-**Email:** kin@apievangelist.com
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.5** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ogilvy/](https://apis.io/providers/ogilvy/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Ogilvy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ogilvy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
